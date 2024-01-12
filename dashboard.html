@@ -1,0 +1,274 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/venn.js"></script>
+     <style>
+       .dashboard {
+         display: flex;
+         justify-content: space-between;
+     width: 600px;
+     height: 400px;
+       }
+   
+       .chart {
+         width: 400px;
+         height: 300px;
+       }
+   
+       .venn-diagram {
+         width: 300px;
+         height: 300px;
+       }
+     </style>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class=".sidebar .logo-details img">
+      <img src="logo1.png">
+     </div>
+
+      <span class="logo_name">IgaSmart Website</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="dashboard.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user'></i>
+            <span class="links_name">Admin panel</span>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class='bx bx-box' ></i>
+              <span class="links_name">Manage Users</span>
+           </button>
+            <div class="dropdown-content">
+              <a href="all student.html">All student</a>
+              <a href="all admin.html">All Admin</a>
+              <a href="add admin.html">Add Admin</a>
+            </div>
+          </div>
+          
+          
+        </li>
+        <li><div class="dropdown">
+          <button class="dropbtn">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Courses</span>
+         </button>
+          <div class="dropdown-content">
+            <a href="all courses.html">All courses</a>
+            <a href="add course.html">Add course</a>
+          
+          </div>
+        </div>
+          
+        </li>
+      
+        
+     
+
+     
+     
+     
+        <li>
+          <a href="">
+            <i class='bx bx-message' ></i>
+            <span class="links_name"> Messages</span></a>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span><br>
+          </a>
+        </li>
+
+       
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+       
+
+
+
+
+
+
+        <img src="profile.jpg" alt="">
+
+
+
+        <div class="dropdown1">
+          <button class="dropbtn1">
+           
+            <span class="admin_name">Ronsard</span>
+              
+        <i class="bx bx-chevron-down"></i>
+         </button>
+          <div class="dropdown-content1">
+            <a href="#">view profile</a>
+            <a href="#">Log out</a>
+
+     
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Registed student</div>
+            <div class="number">30</div>
+            <div class="indicator">
+              
+              <span class="text"></span>
+            </div>
+          </div>
+         
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">  courses</div>
+            <div class="number">15</div>
+            <div class="indicator">
+              
+              <span class="text"></span>
+            </div>
+          </div>
+         
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">admin</div>
+            <div class="number">15</div>
+            <div class="indicator">
+              
+              <span class="text"></span>
+            </div>
+          </div>
+                 </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Active users</div>
+            <div class="number">50</div>
+            <div class="indicator">
+            
+              <span class="text"></span>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+    
+
+       
+         
+         
+     
+              
+          <div class="dashboard">
+            <div class="chart">
+              <canvas id="studentLevelChart"></canvas>
+            </div>
+            <div class="chart">
+              <canvas id="courseCountChart"></canvas>
+            </div>
+            <div class="venn-diagram">
+              <canvas id="vennDiagram"></canvas>
+            </div>
+          </div>
+        
+          <script>
+            // Dummy data for student levels
+            const studentLevels = ['Beginner', 'Intermediate', 'Advanced'];
+            const studentLevelData = [20, 30, 50];
+        
+            // Dummy data for course counts
+            const courseCategories = ['C Programming', 'Java', 'HTML', 'Networking'];
+            const courseCountData = [25, 40, 30, 20];
+        
+            // Initialize the student level chart
+            const studentLevelChart = new Chart(document.getElementById('studentLevelChart'), {
+              type: 'bar',
+              data: {
+                labels: studentLevels,
+                datasets: [{
+                  label: 'Student Levels',
+                  data: studentLevelData,
+                  backgroundColor: 'rgba(75, 192, 192, 0.8)'
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true,
+                    max: 100
+                  }
+                }
+              }
+            });
+        
+            // Initialize the course count chart
+            const courseCountChart = new Chart(document.getElementById('courseCountChart'), {
+              type: 'pie',
+              data: {
+                labels: courseCategories,
+                datasets: [{
+                  label: 'Course Count',
+                  data: courseCountData,
+                  backgroundColor: ['rgba(255, 99, 132, 0.8)', 'rgba(54, 162, 235, 0.8)', 'rgba(255, 206, 86, 0.8)', 'rgba(75, 192, 192, 0.8)']
+                }]
+              }
+            });
+        
+            // Initialize the Venn diagram
+            const vennDiagramData = [
+              { sets: ['Students'], size: 100 },
+              { sets: ['Courses'], size: 80 },
+              { sets: ['Students', 'Courses'], size: 40 }
+            ];
+        
+            const vennDiagram = venn.VennDiagram()
+              .width(300)
+              .height(300);
+        
+            d3.select("#vennDiagram")
+              .datum(vennDiagramData)
+              .call(vennDiagram);
+          </script>
+         
+      
+         
+          </section>
+</body>
+</html>

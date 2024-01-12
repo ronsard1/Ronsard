@@ -1,0 +1,222 @@
+body{
+    /* position: relative; */
+}
+
+.part1{
+    background-color: rgb(237, 252, 250);
+    height: 10rem;
+    color: black;
+    padding: 2rem;
+    
+    
+}
+
+.vid{
+    display: grid;
+    grid-template-columns: 35% 30% 32%;
+    margin: 1px;
+   height: 15rem;
+   /* background-color: #067575; */
+   gap: 1rem;
+   height: 10rem;
+
+}
+.vid .vid1{ 
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 254, 254);
+    padding: 5px 1rem;
+    height: 15rem;
+}
+.vid .vid1 img{ 
+  height: 10rem;
+  width: 100%;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    
+}
+.menu-bar ul li{
+    width: 90px;
+    margin: 5px;
+    padding: 5px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li:hover{
+background: #14e2e9;
+border-radius: 3px;
+}
+.submenu{
+    display: none;
+}
+.menu-bar ul li:hover .submenu{
+display: block;
+position: absolute;
+background: rgb(15, 26, 15);
+/* width: 100%; */
+border-radius: 10px;
+
+margin-left: -70px;
+}
+.menu-bar ul li:hover .submenu ul{
+    display: block;
+    margin: 10px;
+   
+
+}
+.menu-bar ul li:hover .submenu ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .submenu ul li a:hover{
+    color: #067575;
+}
+.subproduct{
+    display: none;
+}
+.submenu ul li:hover .subproduct{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    
+    margin-left: -15px;
+    }
+    .submenu ul li:hover .subproduct ul{
+        display: block;
+        margin: 10px;
+    }
+    
+    .submenu ul li:hover .subproduct ul li:last-child{
+        border-bottom: none;
+    }
+    .submenu ul li:hover .subproduct ul li a:hover{
+        color: #2bab0d;
+    }
+.head{
+    background-color: none;
+    text-align: left;
+}
+.head ul{
+    list-style: none;
+    /*  */
+    display: inline-flex;
+}
+.head ul li{
+    margin-right: 40%; 
+
+    
+}
+.head ul li a{
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    padding: 0;
+    position: absolute;
+}
+
+.firstpart{
+     background: rgba(0,0,0,0.5)url("study.jpg"); 
+    background-size: cover;
+    background-blend-mode: darken;
+   
+    color: aliceblue;
+    /* opacity: 0.7; */
+    height: 35rem;
+}
+.firstpart .top{
+    height: 3rem;
+    /* background-color: aquamarine; */
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+} 
+.firstpart .p{
+    padding-top: 10rem;
+   padding-left: 20rem;
+   font-size: large;
+   font-weight: 300;
+    
+} 
+
+.firstpart .top .logo{
+    padding: 0rem 3rem;
+}
+
+.firstpart .top .logo img{
+    height: 4rem;
+    width: 6rem;
+    border-radius: 1rem;
+}
+.secondpart{
+    background-color: rgb(230, 165, 86);
+    height: 19rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  
+
+}
+.secondpart .grid1{ 
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 254, 254);
+    padding: 2rem 2rem;
+    height: 5rem;
+}
+.secondpart .grid1 img{ 
+  height: 2rem;
+  width: 100%;
+}
+
+
+.box-container{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px; 
+    width: 10rem;
+    height: 10rem;
+}
+.box-container .box{
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+   
+    /* overflow: scroll; */
+    /* text-align: center; */
+    /* padding: 30px 20px; */
+}
+
+
+.box-container .box img{
+
+    background-color:  rgb(30, 107, 84);;
+    width: 30%;
+    height: 2rem;
+    /* text-align: center; */
+    /* padding: 30px 20px; */
+}
+
+
+
+.other{
+    background-color: aliceblue;
+    height: 3rem;
+    padding-top: 1rem;
+}
+

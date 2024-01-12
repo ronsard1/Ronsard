@@ -1,0 +1,48 @@
+.joinclass{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    /* background-color: aqua; */
+    height: 25rem;
+}
+
+
+.joinclass .sidebar{
+  background-color: rgb(28, 155, 197);
+  color: black;
+  text-decoration: none;
+  border-right-style:groove;
+    
+
+}
+
+.joinclass .sidebar ul li{
+    list-style-type: none;
+    margin-top: 5px;
+  }
+
+  .joinclass .sidebar ul li a{
+    text-decoration: none;
+    margin-top: 5px;
+    color: white;
+  }
+
+  .joinclass .sidebar ul li a:hover{
+    text-decoration:underline;
+    
+  }
+  .main-one{
+    
+    height: 100rem;
+  }
+.main-content{
+   display: none; 
+}
+.joinclass .main-content{
+    background-color: rgb(208, 211, 212);
+    height: 21.5rem;
+    padding: 2rem;
+    color: black;
+    overflow-y: scroll;
+      
+  
+  }

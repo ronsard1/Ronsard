@@ -1,0 +1,342 @@
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffff;
+}
+.firstpart{
+     background: rgba(0,0,0,0.5)url("carousel-2.jpg"); 
+    background-size: cover;
+    background-blend-mode: darken;
+   
+
+
+    color: aliceblue;
+    /* opacity: 0.7; */
+    height: 35rem;
+}
+.firstpart .text
+{
+	text-align:left;
+	font-size:20px;
+	color: white;
+
+	
+}
+
+.firstpart .top{
+    height: 3rem;
+    /* background-color: aquamarine; */
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+} 
+.firstpart .p{
+    padding-top: 10rem;
+   padding-left: 20rem;
+   font-size: large;
+   font-weight: 300;
+    
+} 
+
+.firstpart .top .logo{
+    padding: 0rem 6rem;
+}
+
+.firstpart .top .logo img{
+    height: 4rem;
+    width: 6rem;
+    border-radius: 1rem;
+}
+.firstpart .top .logo a{
+ padding-left: 1rem;
+  /* background-color:  rgb(15, 122, 136);  */
+color:white;
+text-decoration: none;
+font-weight: 900;
+
+}
+.firstpart .top .logo a:hover{
+background-color: aqua;
+}
+
+.explain{
+    padding: 0rem 0rem 1rem 2rem;
+}
+.explain a{
+    color: rgb(15, 122, 136);
+    text-decoration: none;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 3px;
+    overflow:auto;
+}
+.box-container .a{
+text-decoration-color: white;
+text-overflow: clip ;
+font-size: 20px;
+color: white;
+}
+.box-container .a:hover{
+    background-color: green;
+}
+.box-container .box1{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course1.png"); 
+}
+.box-container .box2{
+   
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:hidden;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course2.jpg") ; 
+}
+.box-container .box3{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course3.jpg"); 
+}
+.box-container .box4{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course4.jpg"); 
+}
+.box-container .box5{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course5.jpg"); 
+}
+.box-container .box6{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course6.jpg"); 
+}
+.box-container .box7{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course7.jpg"); 
+}
+.box-container .box8{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(30, 107, 84);;
+    /* text-align: center; */
+    overflow:auto;
+    padding: 90px 90px;
+    height: 60px;
+    width: 150px;
+background: url("course8.jpg"); 
+}
+.box-container .box a{
+color:white;
+text-decoration: none;
+font-weight: 900;
+font-size: 20px;
+}
+.box img{
+    width: 100%;
+}
+.aldiv{
+    display: flex;
+    justify-content: flex-end;
+    display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: end;
+}
+
+.describe {
+    font-size: 20px;
+
+    color: black;
+width: 50%;
+}
+
+    .guide {
+        margin-top: 0;
+        margin-left: auto;
+        justify-self: end;
+        flex: 1;
+ 
+      
+        text-align: right;
+       display: block;
+        color: black;
+    
+       
+    }
+.other{
+    margin-top: 3rem;
+    background-color: rgb(240, 244, 255);
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+.thirdpart{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 9rem 2rem;
+    border-block-start-style: dotted;
+    border-block-start-color: brown;
+    padding: 4rem;
+    background-color:rgb(15, 122, 136);
+    color: aliceblue;
+    height: 15rem;
+}
+
+
+.thirdpart .part0{
+    border-left-style: dotted;
+    border-left-color: rgb(0, 0, 0);
+    margin-left: rem;
+   
+}
+.thirdpart .partcopy{
+    margin: 4rem;
+   grid-column: span 5;
+   
+}
+
+.onebox{
+    height: 20hv;
+}
+
+#greeting {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 100px;
+  }
+
+  .gallery{
+    margin-left: 2%;
+    
+   
+}
+.cards{
+    width: 20%;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    display: inline-block;
+    margin: 20px;
+   
+    }
+    .cards:hover {
+        box-shadow: 2px 2px 8px black;
+        background-color:seashell;
+      
+    }
+    .gallery img{
+        width: 100%;
+        height: 200px;
+    }
+    .card0 img{
+       
+        border-radius: 5px;
+    }
+    .card1{
+        margin: 10px;
+
+    }
+   .card1 img {
+    width: 120px;
+    height: 30px;
+   }
+    
+    .card2{
+        text-align:left;
+        height: 100px;
+    }
+    .card2 p{
+        color: rgb(19, 18, 18);
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    }
+   
+    .card2 button{
+        margin-left: 10%;
+        margin-top: 9%;
+        padding: 10px 50px;
+        background-color: rgb(19, 19, 252);
+        color: whitesmoke;
+        border-radius: 10px;
+    }
+    .card2 button:hover{
+        background-color: black;
+        color: whitesmoke;
+        transition: 1s;
+    }
+.but{
+   float: right;
+   margin-right: 5%;
+   padding: 0px 15px;
+   margin-top: 1.2%;
+}
+.but1{
+    padding: 8px;
+    background-color:#ff8c69;
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.but1:hover{
+    box-shadow: 2px 2px 70px black;}
